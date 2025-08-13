@@ -2,6 +2,8 @@ import {Link, useNavigate, useParams} from "react-router";
 import {useEffect, useState} from "react";
 import {usePuterStore} from "~/lib/puter";
 import Details from "~/components/Details";
+import Summary from "~/components/Summary";
+import ATS from "~/components/ATS";
 
 export const meta = () => ([
     {title: 'Resumind | Review'},
@@ -83,7 +85,7 @@ const Resume = () => {
 
                         </div>
                     ) : (
-                        <img src = "images/resume-scan-2.gif" className={"w-full"}/>
+                        <img src = "/images/resume-scan-2.gif" className={"w-full"}/>
                     )}
                 </section>
             </div>
